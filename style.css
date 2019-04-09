@@ -6,7 +6,7 @@
     display: flex;
     background-image: url(img/header-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 85%;
+    background-size: 75%;
     background-position: 39%;
     background-color: #c2c2c2
 }
@@ -16,7 +16,7 @@
 }
 .header-content{
     margin:auto;
-    margin-bottom: 25px
+    margin-bottom: 35px
 }
 .header__text{
     color:#fff;
