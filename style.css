@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 .header{
-    width: 100vw;
+    width: 100%vw;
     height: 100vh;
     display: flex;
     background-image: url(img/header-bg.jpg);
@@ -24,7 +24,7 @@ body{
     font-size: 50px;
 }
 .header-nav{
-    width: 100vw;
+    width: 98vw;
     height: 10vh;
     background-color: none;
     position: fixed;
@@ -54,6 +54,6 @@ body{
     font-family: monospace;
 }
 .galery{
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
 }
