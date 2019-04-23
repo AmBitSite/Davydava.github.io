@@ -1,19 +1,21 @@
+let galery = document.querySelectorAll('.album'),
+    galeryContain = document.querySelectorAll('.galery-contain');
 $(document).ready(function() {
     $('.image-link').magnificPopup({
-        type: 'image',
-        mainClass: 'mfp-with-zoom',
-        zoom: {
-            enabled: true,
-            duration: 300, 
-            easing: 'ease-in-out', 
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
+        type: 'inline',
+        preloader: false,
+        modal: true
     });
-    $('.album').on('click', function(){
-        $('.album-1').toggle('slow');
+    $(document).on('click', '.popup-modal-dismiss', function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
     });
+    for(let i=0, x = galery.length; i<=x; i++){
+        $(galery[i]).on('click', function(){
+        $(galeryContain[i]).slideToggle('slow');
+    });
+    }
+    
     
     
 });
