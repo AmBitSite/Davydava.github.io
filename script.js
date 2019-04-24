@@ -12,9 +12,11 @@ $(document).ready(function() {
     });
     for(let i=0, x = galery.length; i<=x; i++){
         $(galery[i]).on('click', function(){
-        $(galeryContain[i]).slideToggle('slow');
-    });
-    }
+            $(galeryContain).slideUp('slow');
+                $(galeryContain[i]).slideToggle('slow');
+            });
+        }
+
     
     
     
