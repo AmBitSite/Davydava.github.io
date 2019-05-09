@@ -12,12 +12,27 @@ $(document).ready(function() {
     });
     for(let i=0, x = galery.length; i<=x; i++){
         $(galery[i]).on('click', function(){
-            $(galeryContain).slideUp('slow');
-                $(galeryContain[i]).slideToggle('slow');
+            if($(galeryContain).hasClass('media-active')){
+                if($(galeryContain[i]).hasClass('media-active')){
+                     $(galeryContain[i]).removeClass("media-active");
+                }
+            }
+            else if($(galeryContain).hasClass('media-active')==false){
+                $(galeryContain[i]).addClass('media-active')
+            };
             });
-        }
-
-    
-    
-    
+    }
+    $('.about-btn__rus').on('click',function(e){
+        $('.about-btn__rus').addClass('about__btn_active');
+        $('.about-info__text-rus').show();
+        $('.about-info__text-eng').hide();
+        $('.about-btn__eng').removeClass('about__btn_active');
+    });
+    $('.about-btn__eng').on('click',function(e){
+        $('.about-btn__eng').addClass('about__btn_active');
+        $('.about-info__text-eng').show();
+        $('.about-info__text-rus').hide();
+        $('.about-btn__rus').removeClass('about__btn_active');
+    })
 });
+

@@ -50,8 +50,6 @@
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    border-radius: 8px 8px 0px 0px;
-
 }
 .nav-list__item:hover{
         border: 3px solid #a8aaab;
@@ -122,7 +120,7 @@
 .galery-contain{
     width: 76.6vw;
     margin-bottom: 50px;
-    display: none;
+    display: none;    
 }
 .img__item{
     width: 300px;
@@ -139,9 +137,7 @@
 .img__item_active{
     width: auto;
     height: 80vh;
-
 }
-
 .img-coment{
     display: flex;
     flex-direction: column;
@@ -160,3 +156,101 @@
     margin-right: 10px;
     margin-top: 10px;
 }
+.media-active{
+    display: block;
+    opacity: 1;
+    transition: opacity 1.5s linear 1s;
+}
+.about{
+    width: 98.78vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.about__img{
+    width:50%
+}
+.about-info{
+    display: flex;
+    width: 50%;
+}
+.about-info-contain{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+.about__btn{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: none;
+    border-radius: 3px;
+    margin:10px 0;
+}
+.about__btn:hover{
+    background: #c2c2c2;
+    transition: background-color .5s linear;
+}
+.about__btn:active{
+    background: #3f3f3f;
+    color:#fff;
+}
+.about__btn_active{
+    background: #3f3f3f;
+    color:#fff;
+}
+.about-info__header{
+    margin-top:50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Work Sans';
+}
+.about-info__text{
+    text-align:justify;
+    line-height: 170%;
+    color:#525252;
+    font-family: 'Work Sans';
+    flex-grow: 1;
+}
+.about-info__text-rus{
+    display: block;
+}
+.about-info__text-eng{
+    display: none;
+}
+.video{
+    width: 98.78vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+}
+.video__header{
+    margin-top: 55px;
+    font-size: 24px;
+}
+.video-contain{
+    display: flex;
+    width: 98.78vw;
+    height: 100%;
+    margin: auto
+}
+.video-left{
+    
+    width: 50%;
+    margin: auto;
+}
+.video-right{
+    
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+
