@@ -35,11 +35,15 @@ $(document).ready(function() {
         $('.about-btn__rus').removeClass('about__btn_active');
     })
 });
- $('.header-nav__btn').on('click', function(){
-     $('.header-nav__btn').hide();
-     $('.header-nav').slideDown('fast');
+
+if(window.matchMedia('(max-width: 750px)').matches){
+    $('.header-nav__btn').on('click', function(){
+        $('.header-nav__btn').hide();
+        $('.header-nav').slideDown('fast');
  });
-$('.header-nav').on('click', function(){
-    $('.header-nav').slideUp('fast');
-    $('.header-nav__btn').show();
-})
+    $('.header-nav').on('click', function(){
+        $('.header-nav').slideUp('fast');
+        $('.header-nav__btn').show();
+    })
+}
+ 
