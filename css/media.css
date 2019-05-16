@@ -98,3 +98,12 @@
         order: 1;
     }
 }
+@media(max-width:400px){
+    .video-right{
+    width: 50%;
+    margin: auto;
+}
+.videoFrame{
+    width: 100%;
+    height: 100%;
+}
