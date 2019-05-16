@@ -34,16 +34,28 @@ $(document).ready(function() {
         $('.about-info__text-rus').hide();
         $('.about-btn__rus').removeClass('about__btn_active');
     })
+    if(window.matchMedia('(max-width: 850px)').matches){
+        $('.header-nav__btn').on('click', function(){
+            $('.header-nav__btn').hide();
+            $('.header-nav').slideDown('fast');
+        });
+        $('.nav-list__item').on('click', function(){
+            $('.header-nav').slideUp('fast');
+            $('.header-nav__btn').show();
+        })
+    };
+    $('a[href^="#"]').click(function(){
+        elementClick = $(this).attr('href');
+        destination = $(elementClick).offset().top;
+        $('html').animate({scrollTop:destination},1000);
+        if(window.matchMedia('(max-width: 850px)').matches){
+            $('.header-nav').slideUp('fast');
+            $('.header-nav__btn').show();
+        }
+        return false;
+    });
+    
+    
 });
 
-if(window.matchMedia('(max-width: 750px)').matches){
-    $('.header-nav__btn').on('click', function(){
-        $('.header-nav__btn').hide();
-        $('.header-nav').slideDown('fast');
- });
-    $('.header-nav').on('click', function(){
-        $('.header-nav').slideUp('fast');
-        $('.header-nav__btn').show();
-    })
-}
- 
+

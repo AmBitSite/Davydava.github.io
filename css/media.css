@@ -1,6 +1,6 @@
 @media(max-width:1100px){
     .nav-list__item{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .album-conteiner{
         width: auto;
@@ -14,17 +14,6 @@
     .galery-contain{
         width: 90%;
     }
-    .video{
-        height: 100%
-    }
-    .video-left{
-        width: 100%;
-        margin: 20px 0;
-    }
-    .video-right{
-        width: 100%;
-        margin-bottom: 20px
-    }
     .about-info-contain{
         width: 80%;
         height: 85%;
@@ -32,8 +21,20 @@
     .about-info__text{
         line-height: 160%
     }
+    .video-info__text{
+        line-height: 140%;
+        padding: 0px 25px 0px 30px;
+    }
 }
-@media(max-width:950px){
+@media(max-width:850px){
+    .nav-list__item{
+
+        padding: 2px;
+    }
+    .nav-list__item_style{
+        padding: 0;
+        height: auto;
+    }
     .about-info-contain{
         width: 90%;
         height: 100%;
@@ -41,20 +42,49 @@
     .about-info__text{
         line-height: 160%
     }
-        .header-nav__btn{
+    .header-nav__btn{
         display: block;
         position: fixed;
     }
+    .img-contain{
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+    }
+    .img__item_active{
+        object-fit:contain;
+    }
+    .img-coment{
+        width: auto;
+    }
+    .video-left{
+        flex-direction: column;
+    }
+    .video-right{
+        flex-direction: column;
+    }
+    .videoFrame{
+        width: 100%;
+        height: 400px
+    }
+    .video-info{
+        width: 100%
+    }
 }
-@media(max-width:850px){
+@media(max-width:750px){
     .header{
-        height: 100vh
+        height: 100vh;
     }
     .header-nav__btn{
         display: block;
         position: fixed;
         right: 0;
         top: 0;
+    }
+    .nav-list__item_style{
+        display: inline-block;
+        height: 100%;
+        padding:10px;
     }
     .header-nav{
         display: none;
@@ -74,8 +104,7 @@
         margin-left: 0
     }
 }
-@media(max-width:750px){
-
+@media(max-width:650px){
     .nav-list{
         flex-direction: column;
         width: 100%;
@@ -98,17 +127,9 @@
         order: 1;
     }
 }
-@media(max-width:500px){
-    .video-right{
+@media(max-width:450px){
+        .videoFrame{
         width: 100%;
-        height: 100%;
-}
-    .video-left{
-        width: 100%;
-        height: 100%;
-}
-    .videoFrame{
-        width: 95%;
+        height: 280px;
     }
-}
 }
