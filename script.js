@@ -12,16 +12,22 @@ $(document).ready(function() {
     });
     for(let i=0, x = galery.length; i<=x; i++){
         $(galery[i]).on('click', function(){
-            if($(galeryContain).hasClass('media-active')){
-                if($(galeryContain[i]).hasClass('media-active')){
-                     $(galeryContain[i]).removeClass("media-active");
-                }
+            if($(galery[i]).hasClass('media-active')==false){
+                for(let i=0, x = galery.length; i<=x; i++){
+                    $(galeryContain[i]).slideUp("slow");
+                    $(galery[i]).removeClass('media-active');
+                };
+                $(galeryContain[i]).slideDown("slow");
+                $(galery[i]).addClass('media-active');
             }
-            else if($(galeryContain).hasClass('media-active')==false){
-                $(galeryContain[i]).addClass('media-active')
-            };
-            });
+            else{
+                $(galeryContain[i]).slideUp("slow");
+                $(galery[i]).removeClass('media-active');
+            }
+        });
+        
     }
+
     $('.about-btn__rus').on('click',function(e){
         $('.about-btn__rus').addClass('about__btn_active');
         $('.about-info__text-rus').show();
@@ -54,8 +60,8 @@ $(document).ready(function() {
         }
         return false;
     });
-    
-    
 });
-
+let x = document.querySelector('.img__item_active');
+ console.log(x.width);
+console.log(document.body.clientWidth);
 
