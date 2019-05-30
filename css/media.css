@@ -97,13 +97,15 @@
         }
         .img-contain {
             flex-direction: column;
-            width: auto;
+            width: 90%;
+            height: 97vh;
             justify-content: center;
         }
         .img__item_active {
             width: auto;
-            height: auto;
+            height: 80%;
             object-fit: contain;
+            object-position: bottom;
         }
         .img-coment {
             width: auto;

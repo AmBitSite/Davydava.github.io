@@ -183,14 +183,14 @@
 
 .img-contain {
     display: flex;
-    width: 90%;
+    width: 95%;
     height: 90%;
     margin: 0 auto !important;
 }
 
 .img__item_active {
     display: flex;
-    width: 85%;
+    width: 80%;
     height: 97vh;
     justify-content: center;
     object-fit: contain;
@@ -199,10 +199,8 @@
 .img-coment {
     display: flex;
     flex-direction: column;
-    min-width: 250px;
-    width: auto;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 97vh;
     background-color: #fff;
     padding: 10px;
 }
