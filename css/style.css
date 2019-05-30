@@ -177,21 +177,23 @@
 
 .img__item {
     width: 300px;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
 .img-contain {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 90%;
+    margin: 0 auto !important;
 }
 
 .img__item_active {
     display: flex;
-    margin: auto 0;
-    width: 90%;
+    width: 85%;
+    height: 97vh;
     justify-content: center;
+    object-fit: contain;
 }
 
 .img-coment {
@@ -428,4 +430,8 @@
 
 .d-n {
     display: none;
+}
+
+.order {
+    order: 1;
 }
